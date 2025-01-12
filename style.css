@@ -1,0 +1,72 @@
+/* Background untuk hero section */
+#home {
+    background: linear-gradient(135deg, #39FF14, #1F1F1F);
+    color: black;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: ('img/home.jpg');
+    background-blend-mode: overlay;
+}
+
+#hero {
+    background: url('img/hero.jpg')
+}
+
+/* Background untuk seluruh halaman */
+body {
+    background: linear-gradient(180deg, #F9F9F9, #EFEFEF);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Section lainnya */
+section {
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin-bottom: 20px;
+    
+}
+/* Menambahkan padding-top pada setiap section */
+#home, #products, #about, #faq, #contact {
+    padding-top: 100px;
+}
+
+/* Menambahkan offset khusus untuk menyesuaikan dengan tinggi navbar */
+html {
+    scroll-padding-top: 100px;
+}
+/* Styling untuk bagian Testimoni */
+#testimonials .card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+#testimonials .card:hover {
+    transform: translateY(-10px);
+}
+
+#testimonials .card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+#testimonials .card-text {
+    font-style: italic;
+    color: #555;
+}
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.rating .star {
+    font-size: 1.2rem; /* Atur ukuran bintang jika diperlukan */
+}
+
+.d-flex.align-items-center p {
+    margin: 0; /* Hilangkan margin tambahan pada teks ulasan */
+    font-size: 0.9rem; /* Sesuaikan ukuran teks jika perlu */
+}
